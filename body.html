@@ -35,12 +35,11 @@
                     <li>
                        <h3><a href="#">About</a></h3>
                     </li>
+
                     <li>
                         <h3><a href="#">Contact</a></h3>
                     </li>
-                    <li>
-                        <h3><a href="#">Create Blog</a></h3>
-                    </li>
+
                     <li class="active">
                         <h3><a href="#">Profile</a></h3>
                     </li>
@@ -55,14 +54,12 @@
                     <span><i class="far fa-address-card"></i></span>
                    <h3><a href="#">About</a></h3>
                 </li>
+
                 <li>
                     <span><i class="fas fa-phone-alt"></i></span>
                     <h3><a href="#">Contact</a></h3>
                 </li>
-                <li>
-                    <span><i class="fas fa-plus"></i></span>
-                    <h3><a href="#">Create Blog</a></h3>
-                </li>
+
                 <li class="active">
                     <span><i class="fas fa-user"></i></span>
                     <h3><a href="#">Profile</a></h3>
@@ -106,6 +103,11 @@
                                 <span><i class="fas fa-heart"></i></span>
                                 <h3>Favourite</h3>
                             </li>
+                             
+                            <li onclick="show(3)">
+                                <span><i class="fas fa-plus"></i></span>
+                                <h3>Create</h3>
+                            </li>
                         </ul>
                     </nav>
                </div>
@@ -115,58 +117,139 @@
 
                 <!-- === user profile === -->
                 <section class="profile tabs">
-                    <!-- === USER PROFILE PIC AND EDIT BUTTON === -->
-                    <div class="user_img">
-                        <img src="img/user.png" alt="user image">
-                        <button class="btn">Edit <i class="far fa-edit"></i></button>
-                    </div>
+                    <div class="profile">
                         <!-- === USERNAME FORM === -->
-                    <form action="#" class="user_name">
-                        <div class="user">
-                            <i class="far fa-user"></i>
-                            <input type="text" class="name" placeholder="USER8091">
-                        </div>
-                        <button class="save_btn">Save</button>
-                    </form>
+                        <form action="#" class="user_name">
+                            <div class="top">
+                                <!-- === USER PROFILE PIC AND EDIT BUTTON === -->
+                                <button class="btn"><i class="far fa-edit"></i></button>
+
+                                <div class="user_img">
+                                    <img src="img/user.png" alt="user image">
+                                </div>
+
+                                <!-- === USER NAME AND EDIT === -->
+                                <div class="user">
+                                    <input type="text" class="name_2" placeholder="USER8091">
+
+                                    <div class="edit_name-button">
+                                        <button class="btn_2"><i class="far fa-edit"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <!-- ==== SOCIAL MEDIA ==== -->
+                                <div class="user_socialmedia">
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-facebook"></i></a>
+                                </div>
+
+                                <!-- ==== BLOG INFO ==== -->
+                                <div class="blogs">3 <span>Blogs</span></div>
+                                <div class="border"></div>
+                                <div class="followers">2k <span>Followers</span></div>
+                                <div class="border"></div>
+                                <div class="following">43 <span>Following</span></div>
+                            </div>
+                        </form>
+                    </div>
                 </section>
 
                 <!-- === my blogs === -->
                 <section class="tabs">
 
                     <div class="userpost">
+                        <!-- POST 1 -->
                         <div class="post">
-
                             <div class="post_img">
-                               
+                               <img src="img/25630.jpg" alt="Green tea">
                             </div>
 
                             <div class="post_text">
                                 <span>4 days ago</span>
                                 <h2>Green Tea</h2>
-                                <p>Green tea is a type of tea that is made from Camellia sinensis leaves and buds.</p>
+                                <p>Green tea is a type of tea that is made from Camellia sinensis leaves and buds and it is good for mind.</p>
                                 <a href="#">More...</a>
                             </div>
-
-                            <div class="post_stats">
-
-                            </div>               
+              
                         </div>
 
+                        <!-- POST 2 -->
                         <div class="post">
-                                                  
-                        </div>
+                            <div class="post_img">
+                               <img src="img/south africa.jpg" height="200" alt="cape town beach">
+                            </div>
 
+                            <div class="post_text">
+                                <span>1 month ago</span>
+                                <h2>Beauty of S.Africa</h2>
+                                <p>South Africa, renowned for its great natural beauty, thats why it is a favourate destination of travelers</p>
+                                <a href="#">More...</a>
+                            </div>
+                   
+                        </div>
+                        <!-- POST 3 -->
                         <div class="post">
-                                                  
+                            <div class="post_img">
+                               <img src="img/1876.jpg" height="200" alt="space">
+                            </div>
+
+                            <div class="post_text">
+                                <span>1 year ago</span>
+                                <h2>Space Explorer</h2>
+                                <p>The Space Explorer game where you can explore the planets, asteroids, and galaxy by clicking on them.</p>
+                                <a href="#">More...</a>
+                            </div>
+                     
                         </div>   
                     </div>
                 </section>
 
                 <!-- === favourite === -->
                 <section class="tabs">
-                 <img src="img/short logo.png" alt="">
+
+                    <div class="likeblogs">
+
+                         <!-- POST 1 -->
+                         <div class="post">
+                            <div class="post_img">
+                               <img src="img/south africa.jpg" height="200" alt="cape town beach">
+                            </div>
+
+                            <div class="post_text">
+                                <span>1 month ago</span>
+                                <h2>Beauty of S.Africa</h2>
+                                <p>South Africa, renowned for its great natural beauty, thats why it is a favourate destination of travelers</p>
+                                <a href="#">More...</a>
+                            </div>
+                 
+                        </div>
+
+                        <!-- POST 2 -->
+                        <div class="post">
+                            <div class="post_img">
+                               <img src="img/1876.jpg" height="200" alt="space">
+                            </div>
+
+                            <div class="post_text">
+                                <span>1 year ago</span>
+                                <h2>Space Explorer</h2>
+                                <p>The Space Explorer game where you can explore the planets, asteroids, and galaxy by clicking on them.</p>
+                                <a href="#">More...</a>
+                            </div>
+             
+                        </div>   
+                    </div>
                 </section>
 
+
+<!-- ========================== CREATE BLOG ============================ -->
+                <section class="tabs">
+                    <div class="create">
+                        <h1>create your blog</h1>
+                    </div>
+                </section>
             </div>
         </div> 
     </div>
